@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputPatente"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingrese la patente"
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese la marca"
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputModelo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingrese el modelo"
+        android:inputType="number"
+        android:textAlignment="viewStart"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingrese el precio"
+        android:inputType="numberDecimal"
+        android:textAlignment="viewStart"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="agregarVehiculo"
+        android:text="Agregar"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/selectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="consultar"
+        android:text="Consultar"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/modificarBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="modificar"
+        android:text="Modificar"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/eliminarBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="eliminar"
+        android:text="Eliminar"
+        android:textSize="25sp" />
+
+</LinearLayout>
